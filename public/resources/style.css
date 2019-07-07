@@ -1,0 +1,159 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:focus,
+:hover {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+}
+
+::-moz-placeholder {
+    color: #999;
+}
+
+:focus::-webkit-input-placeholder {
+    text-indent: -999px
+}
+
+:focus::-moz-placeholder {
+    text-indent: -999px
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    line-height: 1;
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+    text-decoration-skip: objects;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+textarea {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button {
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+textarea {
+    resize: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+label {
+    display: block;
+}
+
+.main {
+    width: 1200px;
+    margin: 10px auto;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block {
+    width: 100%;
+    border: 1px solid #f7f7f7;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    margin: 1rem;
+    padding: 1rem 2rem;
+}
+
+.form-element {
+    margin: .7rem 0;
+}
+
+.form-element input[type="text"],
+.form-element textarea
+{
+    width: 100%;
+    color: #222;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: .45rem 1rem;
+    margin: .45rem 0;
+}
+
+.form-element input[type="text"].error,
+.form-element textarea.error {
+    border: 1px solid red;
+}
+
+.form-element p.error {
+    color:red;
+    font-size: 80%;
+    margin: 0 0 1rem;
+}
+
+.button {
+    background-color: darkgreen;
+    color: white;
+    border: 1px solid darkgreen;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+}
+
+.button:hover,
+.button:focus {
+    background-color: green;
+    border-color: green;
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    .block {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .block {
+        width: 50%;
+    }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Тестовое задание</title>
+        <link rel="stylesheet" href="resources/style.css">
+    </head>
+
+    <body>
+
+        <div class="main">
+
+            <div class="block">
+                <form action="../mail.php" method="POST">
+                    <div class="form-element">
+                        <label for="name">Имя:</label>
+                        <input id="name" type="text" name="name" placeholder="Введите имя" autocomplete="off" />
+                    </div>
+                    <div class="form-element">
+                        <label for="phone">Телефон:</label>
+                        <input id="phone" type="text" name="phone" placeholder="Введите телефон" autocomplete="off" />
+                    </div>
+                    <div class="form-element">
+                        <label for="email">Email:</label>
+                        <input id="email" type="text" name="email" placeholder="Введите email" autocomplete="off" />
+                    </div>
+                    <div class="form-element">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="10" placeholder="Введите текст сообщения" autocomplete="off"></textarea>
+                    </div>
+                    <div class="form-element">
+                        <button class="button" id="submit">Отправить сообщение</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+        <script type="text/javascript" src="resources/script.js"></script>
+    </body>
+</html>
